@@ -1,0 +1,83 @@
+:root {
+  --main-orange: #EA7600;
+  --dark-background: #2E3440;
+  --dark-cover: #262C37;
+  --light-background: #fff;
+  --light-cover: #F5F5F5;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Segoe UI';
+  user-select: none;
+}
+
+.ContainerSettings {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.ContainerSettingContent {
+  height: 800px;
+  width: 790px;
+  margin-top: 30px;
+}
+
+.containterNavigation {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  width: 163px;
+  height: 860px;
+}
+
+.containterNavigation li {
+  list-style-type: none;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.containterNavigation li:hover {
+  background-color: #2E3440;
+  border-left: var(--main-orange) solid 3px;
+}
+
+@media (prefers-color-scheme: light) {
+
+  /* Styles for light mode */
+  body {
+    background-color: var(--light-background);
+    color: #000;
+  }
+
+  .containterNavigation {
+    background-color: var(--light-cover);
+  }
+
+  .ContainerSettingContent {
+    background-color: var(--light-cover);
+  }
+
+  /* Add more styles for light mode here */
+}
+
+@media (prefers-color-scheme: dark) {
+
+  /* Styles for dark mode */
+  body {
+    background-color: var(--dark-background);
+    color: #fff;
+  }
+
+  .containterNavigation {
+    background-color: var(--dark-cover);
+  }
+
+  .ContainerSettingContent {
+    background-color: var(--dark-cover);
+  }
+
+  /* Add more styles for dark mode here */
+}
